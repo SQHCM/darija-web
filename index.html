@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Darija 101 – Kit de supervivencia</title>
+<style>
+:root{
+  --bg:#f8fafc;
+  --card:#ffffff;
+  --ink:#0f172a;
+  --muted:#475569;
+  --radius:16px;
+  --shadow:0 10px 30px rgba(2,6,23,.08);
+}
+*{box-sizing:border-box}
+body{margin:0; font-family:ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial, Noto Sans, Noto Naskh Arabic, Amiri; color:var(--ink); background:var(--bg)}
+.container{max-width:1000px; margin:24px auto; padding:16px}
+h1{margin:0 0 8px 0; font-size:clamp(1.6rem, 1.2rem + 2vw, 2.2rem)}
+.subtitle{color:var(--muted); margin:0 0 18px 0}
+.card{background:var(--card); border-radius:var(--radius); box-shadow:var(--shadow); padding:16px; margin:14px 0}
+.table{width:100%; border-collapse:collapse}
+.table th, .table td{padding:12px 10px; border-bottom:1px solid #e5e7eb; text-align:left; vertical-align:middle}
+.table th{font-size:.95rem; letter-spacing:.2px; color:#1f2937}
+.badge{display:inline-block; padding:6px 10px; border-radius:999px; font-weight:700; background:#eef2ff; color:#3730a3; margin-left:8px}
+.footer{margin:12px 0 24px; color:var(--muted); font-size:.95rem}
+.accordion{border-radius:var(--radius); overflow:hidden; margin:16px 0; box-shadow:var(--shadow);}
+.accordion summary{cursor:pointer; list-style:none; padding:16px; font-weight:800; color:white; display:flex; align-items:center; justify-content:space-between}
+.accordion summary::marker{display:none}
+.accordion summary span{opacity:.9}
+.accordion .content{background:var(--card); padding:0}
+.section-title{display:flex; align-items:center; gap:10px}
+.section-title .dot{width:10px; height:10px; border-radius:50%; background:white; opacity:.9}
+.note{color:var(--muted); margin:8px 0 0}
+.small{font-size:.9rem}
+.bold-darija{font-weight:800}
+.italic-es{font-style:italic}
+audio{width:160px; height:36px}
+@media (max-width:760px){
+ .table th:nth-child(3){display:none} /* hide 'Audio' header on small */
+}
+
+/* 🔹 NUEVO: ocultar la columna de Árabe */
+.table th:nth-child(4),
+.table td:nth-child(4) {
+  display: none;
+}
+</style>
+</head>
+<body>
+<div class="container">
+  <h1>Darija 101 — Kit de supervivencia</h1>
+  <p class="subtitle">Pequeña guía para <strong>repasar poco a poco</strong> palabras sueltas y expresiones que se usan en el día a día.  
+  La idea es que vayas practicando sin presión: ¡no necesitas una pronunciación perfecta para hacerte entender! ✨</p>
+
+  <div class="card">
+    <h2 style="margin:4px 0 10px 0;">Cómo leer la transcripción</h2>
+    <p class="small">En esta guía marcamos el sonido gutural con el símbolo <strong>ʿ</strong>* (normalmente escrito con un “3”).</p>
+    <table class="table small">
+      <thead>
+        <tr><th>Símbolo</th><th>Sonido aproximado</th><th>Letra árabe</th><th>Ejemplo en darija</th></tr>
+      </thead>
+      <tbody>
+        <tr><td><strong>ʿ</strong></td><td>sonido gutural profundo (ʿayn)</td><td>ع</td><td class="bold-darija">ʿafak</td></tr>
+        <tr><td><strong>7</strong></td><td>“h” fuerte, aspirada</td><td>ح</td><td class="bold-darija">7alib</td></tr>
+        <tr><td><strong>9</strong></td><td>“k” profunda de garganta (qaf)</td><td>ق</td><td class="bold-darija">9ahwa</td></tr>
+        <tr><td><strong>kh</strong></td><td>“j” castellana</td><td>خ</td><td class="bold-darija">khobz</td></tr>
+        <tr><td><strong>gh</strong></td><td>“r” francesa / g gutural</td><td>غ</td><td class="bold-darija">ghali</td></tr>
+        <tr><td><strong>sh</strong></td><td>“sh” inglesa</td><td>ش</td><td class="bold-darija">shukran</td></tr>
+        <tr><td><strong>dj / j</strong></td><td>entre “y” y “j” suave</td><td>ج</td><td class="bold-darija">jben</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- aquí siguen todas tus secciones (Saludos, Small talk, etc.) -->
+
+  <p class="footer">© 2025 · Creado por <strong>Meriem Sqalli</strong>.</p>
+</div>
+</body>
+</html>
